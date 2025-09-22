@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="result">
+      <h1>Hello</h1>
+    </div>
+    <script>
+      
+      const name = "Horolmaa";
+      const age = 20;
+      const gender = "Female";
+      const highschool = "Emphaty";
+      const university = "MUIS";
+      const hobbies = ["Basketball", "Foosball", "Tennis"];
+      const horolmaa = ["Horolmaa", 20, "Female", "MUIS"];
+
+      const horol = {
+        name: "Horolmaa",
+        age: 21,
+        gender: "Female",
+      };
+
+      const yunden = {
+        name: "Yunden",
+        age: 22,
+        gender: "Male",
+        hobbies: ["Tennis, Foosball"],
+      };
+      console.log(yunden["name"]);
+      console.log(horol.gender);
+      const students = [horol, yunden];
+      console.log(
+        "Namaig " + yunden.name + " gedeg. Bi " + yunden.age + " nastai."
+      );
+      console.log(
+        `Namaig ${yunden.name} gedeg. Bi ${yunden.age} nastai. Minii durtai zuils: ${yunden.hobbies}`
+      );
+
+      const arr = ["Bold", "Bat"]; 
+      const obj = {givenname: "Bold", surname:"Bat" };
+
+      console.log(obj);
+
+      obj.givenname = "Sarnai"
+      obj.gender = "Female"
+      console.log(obj);
+
+   const keys = Object.keys(obj);
+    console.log(keys)
+
+    const values = Object.values(obj);
+    console.log(values)
+
+    const entries = Object.entries(obj); 
+    console.log(entries)
+
+    document.getElementById("result").innerHTML = ``;
+    </script>
+
+    </div>
+  </body>
+</html>
