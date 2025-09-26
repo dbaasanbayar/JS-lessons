@@ -33,7 +33,7 @@
       };
       console.log(yunden["name"]);
       console.log(horol.gender);
-      const students = [horol, yunden];
+      const studentss = [horol, yunden];
       console.log(
         "Namaig " + yunden.name + " gedeg. Bi " + yunden.age + " nastai."
       );
@@ -44,11 +44,11 @@
       const arr = ["Bold", "Bat"]; 
       const obj = {givenname: "Bold", surname:"Bat" };
 
-      console.log(obj);
+    
 
       obj.givenname = "Sarnai"
       obj.gender = "Female"
-      console.log(obj);
+      
 
    const keys = Object.keys(obj);
     console.log(keys)
@@ -59,9 +59,21 @@
     const entries = Object.entries(obj); 
     console.log(entries)
 
-    document.getElementById("result").innerHTML = ``;
+    const students = [
+      {name: "Bat", surname: "Dorj"},
+      {name: "Sarnai", surname: "Bold"}
+    ]
+
+    document.getElementById("result").innerHTML = `
+      <div><button>hi</button></div>
+    
+    `;
     </script>
 
+<script>
+
+</script>
     </div>
+    
   </body>
 </html>
